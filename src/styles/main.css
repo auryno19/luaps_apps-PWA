@@ -1,0 +1,52 @@
+
+@import url(hero.css);
+@import url(navbar.css);
+@import url(mobile.css);
+@import url(list.css);
+@import url(content.css);
+@import url(detail.css);
+@import url(responsive.css);
+@import url('https://fonts.googleapis.com/css2?family=Rubik');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%
+}
+body {
+	font-size: 12px;
+	color: rgb(0, 23, 46);
+}
+
+footer {
+	background-image: linear-gradient(white max(2rem, 5vh), rgb(0, 23, 46));
+	font-weight: bolder;
+	color: #001830;
+	font-size: 14px;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+}
+.skip-link {
+	position: absolute;
+	top: -100px;
+	left: 0;
+	background-color: #bf1722;
+	color: white;
+	padding: 10px;
+	font-size: 20px;
+	z-index: 100;
+	text-decoration: none
+}
+.skip-link:focus {
+	top: 100px
+}

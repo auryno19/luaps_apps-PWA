@@ -1,0 +1,74 @@
+.list {
+	margin: 25px auto auto;
+	display: grid;
+	grid-row-gap: 20px;
+}
+.listResto {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+    --card-gradient: #2d2d2d;
+    background-image: linear-gradient(
+      var(--card-gradient),
+      white max(9rem, 28vh)
+    );
+}
+.cityResto {
+	position: absolute;
+	top: 15px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #001830d0;
+	padding: 8px 13px 8px;
+	color: white;
+	font-weight: bolder;
+    font-size: 15px;
+}
+.locationIcon{
+    height: 13px;
+    width: auto;
+    margin-right: 3px;
+}
+.restoImg {
+	width: 100%;
+	max-height: 200px;
+    mix-blend-mode: overlay;
+}
+.rating {
+	position: absolute;
+	top: 15px;
+    right: 0;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #001830d0;
+	padding: 8px 13px 8px;
+	color: white;
+	font-weight: bolder;
+    font-size: 15px;
+}
+.restoContent {
+	padding: 16px;
+}
+.restoTitle {
+	font-weight: 500;
+	font-size: 16px;
+	margin-top: 10px;
+	transition: 0.4s opacity;
+}
+.restoTitle:hover {
+	opacity: 0.5;
+}
+.restoTitle a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 38px;
+}
+.restoDesc {
+	margin-top: -30px;
+	font-size: 14px;
+	line-height: 20px;
+    margin-bottom: 25px;
+    text-align: justify;
+}

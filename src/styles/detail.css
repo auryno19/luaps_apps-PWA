@@ -1,0 +1,120 @@
+.detail {
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+    margin-top: 25px;
+}
+
+.detailImg{
+    position: relative;
+    height: auto;
+    max-width: 1200px;
+    border-radius: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: auto;
+}
+
+.detailImg img{
+    position: relative;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px 2px rgba(22, 23, 41, 0.488);
+}
+
+.detailRate{
+    position: absolute;
+	top: 0px;
+    left: 40%;
+    right: 40%;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    background-color: #001830d0;
+    border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.detailCity{
+    position: inherit;
+    margin-top: 30px;
+    color: #001830;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.detailAddress{
+    color: #001830;
+    font-size: 15px;
+}
+
+.detailResto{
+    padding: 50px;
+    text-align: center;
+    color: #001830;
+}
+.detailResto h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #001830;
+    font-size: 25px;
+}
+
+.detailResto p{
+    color: #001830;
+    font-size: 15px;
+}
+
+.detailMenu{
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.detailReview h3{
+    color: #001830;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.detailReview h5{
+    color: #001830;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-bottom: 5px; 
+}
+
+#detailReview{
+    margin-left: 10px;
+}
+
+hr{
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+}
+
+#detailCategory p{
+    font-size: 15px;
+}
+
+.like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db0000;
+    
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+    
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+
+

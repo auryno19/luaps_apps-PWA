@@ -1,0 +1,55 @@
+.menuMobile {
+	background-image: linear-gradient(rgb(0, 13, 27) max(2rem, 5vh),rgba(0, 0, 0, 0));
+	color: white;
+	width: 100%;
+	display: flex;
+	font-weight: 600;
+	font-size: 20px;
+	padding: 10px;
+	justify-content: space-between;
+    position: fixed;
+	z-index:300;
+}
+.navbarMobile {
+	background-color: white;
+	width: 100%;
+	display: flex;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase
+}
+.listNavMobile {
+	width: 60%;
+	padding: 0;
+	margin: 0;
+	text-align: left
+}
+.itemMobile {
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: left;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+.listNavMobile li:hover a{
+	transition: 0.4s opacity;
+	opacity: 0.5;
+}
+.logoMobile{
+	position: absolute;
+	top: 22px;
+	left: 26%;
+	font-size: 38px;
+}
+.navbarMobile a {
+	display: inline-block;
+	padding: 1.3em;
+	text-decoration: none;
+	color: rgb(40, 49, 69);
+}
+.iconMobile a {
+	text-decoration: none;
+	color: white;
+	font-size: 50px;
+}

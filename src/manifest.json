@@ -1,0 +1,20 @@
+{
+    "id": "luaps-apps",
+    "name": "Luaps Apps",
+    "short_name": "Luaps Apps",
+    "theme_color": "#021027",
+    "background_color": "#021027",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+
+    "icons": [
+        {
+          "src": ".../src/public/images/heros/logo.png",
+          "sizes": "72x72",
+          "type": "image/png",
+          "purpose": "any"
+        }
+    ]
+  }
