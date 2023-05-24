@@ -1,13 +1,13 @@
-import CONFIG from "../global/config";
+import CONFIG from '../global/config';
 
 const favLikeButton = () => `
-    <button aria-label="like this movie" id="likeButton" class="like">
+    <button aria-label="like this restaurant" id="likeButton" class="like">
     <i class="fa fa-heart-o" aria-hidden="true"></i>
     </button>
 `;
 
 const favLikedButton = () => `
-    <button aria-label="unlike this movie" id="likeButton" class="like">
+    <button aria-label="unlike this restaurant" id="likeButton" class="like">
     <i class="fa fa-heart" aria-hidden="true"></i>
     </button>
 `;
@@ -47,24 +47,26 @@ const detail = (restaurant) => `
         </div>
         <div id="likeButtonContainer"></div>
 `;
-const list = (r) =>`
+const list = (r) => `
     <div class="listResto">
             <div class="restoImgGradient">
-            <img class="restoImg" src="${CONFIG.BASE_IMAGE_URL}${r['pictureId']}" alt="${r['name']} ${r['city']}" title="${r['name']} ${r['city']}">
+            <img class="restoImg" src="${CONFIG.BASE_IMAGE_URL}${r.pictureId}" alt="${r.name} ${r.city}" title="${r.name} ${r.city}">
             </div>
             <div class="cityResto">
                 <img class="locationIcon" src="./images/heros/location.png">
-                ${r['city']}
+                ${r.city}
             </div>
             <div class="rating">
                 Rating : 
-                ${r['rating']}
+                ${r.rating}
             </div>
             <div class="restoContent">
-                <h1 class="restoTitle"><a href="#" id="${r.id}">${r['name']}</a></h1>
-                <div class="restoDesc">${r['description'].slice(0, 170)}...</div>
+                <h1 class="restoTitle"><a href="#" id="${r.id}">${r.name}</a></h1>
+                <div class="restoDesc">${r.description.slice(0, 170)}...</div>
             </div>
         </div>
-`
+`;
 
-export { list, detail, favLikeButton, favLikedButton };
+export {
+  list, detail, favLikeButton, favLikedButton,
+};

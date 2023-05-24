@@ -1,4 +1,3 @@
-
 // const CONFIG = require('./config');
 import CONFIG from './config';
 
