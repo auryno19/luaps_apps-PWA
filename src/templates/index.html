@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luaps Apps</title>
-    <link rel="shortcut icon" href="./images/heros/logo.png" />
+    <link rel="shortcut icon" href="./images/icons/logo.png" />
     <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
     <link rel="manifest" href="manifest.json">
 </head>
@@ -13,7 +13,7 @@
   <a href="#content" class="skip-link">Skip to content ?</a>
     <!-- navbar -->
     <nav class="navbar">
-      <img src="./images/heros/logo.png" alt="logo" class="logoImg">
+      <img src="./images/icons/logo.png" alt="logo" class="logoImg">
         <a class="logo" href="">Luaps Apps</a>
         <ul class="listNav">
             <li class="item" id="itemMobileAll"><a href="#">Home</a></li>
@@ -37,13 +37,15 @@
     </nav>
 
     <!-- jumbotron -->
-    <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 38, 0.8), rgba(0, 0, 0, 0.367)), url('./images/heros/hero-image_4.jpg');">
+    <picture>
+    <source media="(max-width: 600px)" srcset="/images/heros/hero-image_4-small.jpg">
+    <div class="hero" style="background-image: linear-gradient(rgba(0, 0, 38, 0.8), rgba(0, 0, 0, 0.367)), url('./images/heros/hero-image_4-large.jpg');">
         <div class="innerHero">
             <h1 class="title">Luaps Apps</h1>
             <p class="subt">Find the best food and the best restaurant in all of Indonesia.</p>
         </div>
     </div>
-
+    </picture>
     <!-- content -->
     <main id="content">
         <section class="content">

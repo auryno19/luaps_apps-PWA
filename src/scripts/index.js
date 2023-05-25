@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import 'regenerator-runtime';
 import '../styles/main.css';
 import FavoriteRestaurant from './data/favorite';
@@ -5,6 +6,8 @@ import registerSw from './utils/register-sw';
 import LikeButtonPresenter from './utils/like-button-presenter';
 import API_ENDPOINT from './global/api_endpoint';
 import { detail, list } from './template/template-creator';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 // drawer
 const menu = document.querySelector('#menu');

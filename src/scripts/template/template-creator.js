@@ -50,10 +50,10 @@ const detail = (restaurant) => `
 const list = (r) => `
     <div class="listResto">
             <div class="restoImgGradient">
-            <img class="restoImg" src="${CONFIG.BASE_IMAGE_URL}${r.pictureId}" alt="${r.name} ${r.city}" title="${r.name} ${r.city}">
+            <img class="restoImg lazyload" src="${CONFIG.BASE_IMAGE_URL}${r.pictureId}" alt="${r.name} ${r.city}" title="${r.name} ${r.city}">
             </div>
             <div class="cityResto">
-                <img class="locationIcon" src="./images/heros/location.png">
+                <img class="locationIcon" src="./images/icons/location.png">
                 ${r.city}
             </div>
             <div class="rating">
