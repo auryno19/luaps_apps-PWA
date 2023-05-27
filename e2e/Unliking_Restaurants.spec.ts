@@ -33,5 +33,5 @@ Scenario('unliking one restaurant',  ({ I }) => {
     I.click('#likeButton');
 
     I.amOnPage('/#/favorite');  
-    I.see('Anda belum memiliki daftar Favorit')
+    I.see('Anda belum memiliki daftar Favorit');
 });

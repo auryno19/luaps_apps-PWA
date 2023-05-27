@@ -8,7 +8,8 @@
     "test": "karma start",
     "lint": "eslint ./src",
     "build-image": "node sharp.js",
-    "e2e": "codeceptjs run --steps"
+    "e2e": "codeceptjs run --steps",
+    "serve" : "http-server dist"
   },
   "keywords": [],
   "author": "your_name <your.email@domain.com>",
@@ -25,6 +26,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.27.5",
     "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.1.1",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "jasmine-ajax": "^4.0.0",

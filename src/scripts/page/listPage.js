@@ -1,5 +1,5 @@
 import API_ENDPOINT from '../global/api_endpoint';
-import { list } from '../template/template-creator';
+import { createRestaurantItem } from '../template/template-creator';
 import getDetailResto from './detailPage';
 
 const showResponseMessage = (message = 'Check your internet connection') => {
@@ -10,7 +10,7 @@ const showResponseMessage = (message = 'Check your internet connection') => {
 const renderResto = (restaurants) => {
   let dataList = '';
   restaurants.forEach((r) => {
-    dataList += list(r);
+    dataList += createRestaurantItem(r);
   });
   document.querySelector('#detailResto').innerHTML = '';
   document.querySelector('#restoList').innerHTML = dataList;

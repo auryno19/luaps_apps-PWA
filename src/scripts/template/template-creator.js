@@ -47,10 +47,10 @@ const detail = (restaurant) => `
         </div>
         <div id="likeButtonContainer"></div>
 `;
-const list = (r) => `
+const createRestaurantItem = (r) => `
     <div class="listResto">
             <div class="restoImgGradient">
-            <img class="restoImg lazyload" src="${CONFIG.BASE_IMAGE_URL}${r.pictureId}" alt="${r.name} ${r.city}" title="${r.name} ${r.city}">
+            <img class="restoImg lazyload" data-src="${CONFIG.BASE_IMAGE_URL}${r.pictureId}" alt="${r.name} ${r.city}" title="${r.name} ${r.city}">
             </div>
             <div class="cityResto">
                 <img class="locationIcon" src="./images/icons/location.png">
@@ -68,5 +68,5 @@ const list = (r) => `
 `;
 
 export {
-  list, detail, favLikeButton, favLikedButton,
+  createRestaurantItem, detail, favLikeButton, favLikedButton,
 };

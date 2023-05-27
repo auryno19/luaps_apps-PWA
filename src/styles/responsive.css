@@ -37,9 +37,6 @@
 		display: grid;
 		grid-template-columns: 1fr;
 	}
-	
-
-
 }
 @media screen and (min-width: 500px) {
 	.menuMobile {
@@ -48,7 +45,18 @@
 	.navbarMobile {
 		display: none !important;
 	}
+}
 
+@media screen and (max-width: 599px) {
+	.hero{
+		background-image: linear-gradient(rgba(0, 0, 38, 0.8), rgba(0, 0, 0, 0.367)), url('../../dist/images/heros/hero-image_4-small.jpg');
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.hero{
+		background-image: linear-gradient(rgba(0, 0, 38, 0.8), rgba(0, 0, 0, 0.367)), url('../../dist/images/heros/hero-image_4-large.jpg');
+	}
 }
 
 @media screen and (max-width: 700px){
@@ -111,4 +119,5 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-column-gap: 20px;
 	}
+	
 }
